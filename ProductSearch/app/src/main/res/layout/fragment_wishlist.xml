@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+<TextView
+    android:id="@+id/no_wishes"
+    android:textColor="#C2C2C5"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:textSize="20dp"
+    android:paddingLeft="150dp"
+    android:paddingTop="200dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="No Wishes"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewWish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--android:layout_above="@+id/button">-->
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lastBar"
+        android:layout_width="match_parent"
+        android:layout_height="496dp"
+        android:backgroundTint="#FB5410"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WishList total("
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/wishCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" items)"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/wishTot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF" />
+    </LinearLayout>
+</LinearLayout>

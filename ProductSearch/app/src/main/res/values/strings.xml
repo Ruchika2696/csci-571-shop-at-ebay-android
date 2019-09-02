@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Product Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="httphost">https://cscinodebackend.appspot.com/getAPIResponse?curr=900</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_product_detail">ProductDetail</string>
+    <string name="title_activity_product_detail2">ProductDetail2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="facebook_app_id">368802450377566</string>
+    <!--<string name="title_activity_search_results">SearchResults</string>-->
+</resources>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:id="@+id/progress"-->
+    <!--android:visibility="gone">-->
+<!--<ProgressBar-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/progressSpinner"-->
+    <!--android:outlineSpotShadowColor="#0308C3"-->
+    <!--android:outlineAmbientShadowColor="#0308C3"-->
+    <!--android:indeterminateTint="#8039F2"-->
+    <!--android:paddingLeft="180dp"-->
+    <!--android:visibility="gone"-->
+    <!--/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/progressText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Searching Products..."-->
+        <!--android:textColor="#C2C2C5"-->
+        <!--android:paddingLeft="145dp"-->
+        <!--android:visibility="gone"/>-->
+<!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tvKeyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keyword"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etKeyword"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:ems="100"
+        android:hint="Enter Keyword"
+        android:inputType="textPersonName"
+        android:textColorLink="#0308C3"
+        tools:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvErrorKeyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Please enter mandatory Field"
+        android:textColor="#FA0707" />
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVw"
+        android:layout_toRightOf="@+id/txtVw" />
+
+    <TextView
+        android:id="@+id/tvCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condition"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:id="@+id/foo1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/newItem"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="New" />
+
+        <CheckBox
+            android:id="@+id/used"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Used" />
+
+        <CheckBox
+            android:id="@+id/unspecified"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Unspecified" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvShipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipping Options"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:id="@+id/foo2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/local"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Local Pickup" />
+
+        <CheckBox
+            android:id="@+id/free"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Free Shipping" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foo3"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvEnableNear"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Enable Nearby Search"
+            android:textSize="14sp" />
+        <CheckBox
+            android:id="@+id/enableNearby"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="" />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/etMiles"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:ems="100"
+        android:hint="Miles From"
+        android:inputType="textPersonName"
+        android:textColorLink="@color/colorPrimaryDark"
+        tools:paddingTop="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:visibility="gone"
+        android:textSize="14sp" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radiogp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+    <RadioButton
+        android:id="@+id/currentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Current Location" />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/foo4"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <RadioButton
+            android:id="@+id/zipButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </RadioGroup>
+
+        <EditText
+            android:id="@+id/etzip"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:ems="100"
+            android:hint="Zipcode"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:inputType="textPersonName"
+            android:textColorLink="@color/colorPrimaryDark"
+            tools:paddingTop="10dp"
+            android:visibility="gone"/>
+</RelativeLayout>
+
+
+
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvErrorZip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter mandatory Field"
+            android:textColor="#FA0707"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:background="#FC5629"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:background="#FC5629"
+            android:gravity="center"
+            android:text="Clear"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="7dp"
+    card_view:contentPadding="7dp"
+    card_view:cardCornerRadius="7dp"
+    card_view:cardMaxElevation="7dp"
+    android:layout_margin="10dp"
+    >
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/similarImg"
+            android:layout_height="130dp"
+            android:layout_width="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2dp"
+            android:layout_column="0"
+
+            android:src="@mipmap/ic_launcher"/>
+
+        <TableLayout
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:paddingLeft="0dp">
+
+            <TextView
+                android:id="@+id/similarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:lines="3"
+                android:text="Name Show Here"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="18dp" />
+
+            <GridLayout>
+
+                <TextView
+                    android:id="@+id/similarShipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="left"
+                    android:text="Phone Number Show"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#C2C2C5"
+                    android:textSize="15dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/similarDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="right"
+                    android:text="Phone Number Show"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#C2C2C5"
+                    android:textSize="15dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_gravity="left"
+
+                    />
+
+                <TextView
+                    android:id="@+id/similarPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_gravity="right"
+                    android:text="Phone Number Show"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#831AE0"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+
+                    />
+
+            </GridLayout>
+
+        </TableLayout>
+
+
+    </GridLayout>
+
+
+</android.support.v7.widget.CardView>

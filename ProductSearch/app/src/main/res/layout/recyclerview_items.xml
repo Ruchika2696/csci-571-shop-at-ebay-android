@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="7dp"
+    card_view:contentPadding="7dp"
+    card_view:cardCornerRadius="7dp"
+    card_view:cardMaxElevation="7dp"
+    android:onClick="showDetail"
+    android:layout_margin="10dp"
+    >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <ImageView
+                android:id="@+id/img_android"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/ic_launcher"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/titleTv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Name Show Here" />
+        </TableRow>
+
+        <TableRow>
+            <GridLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:useDefaultMargins="true"
+                android:alignmentMode="alignBounds"
+                android:columnOrderPreserved="false"
+                android:columnCount="2"
+                >
+                <TextView
+                    android:id="@+id/zipTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Phone Number Show"
+                    android:textColor="#C2C2C5"
+                    android:textSize="15dp"
+                    android:layout_row="0"
+                    android:layout_gravity="left"
+                    android:layout_column="0"
+
+                    />
+                <TextView
+                    android:id="@+id/shippingTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#C2C2C5"
+                    android:textSize="15dp"
+                    android:layout_row="1"
+                    android:layout_gravity="left"
+                    android:layout_column="0"
+                    />
+                <RelativeLayout
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    style="vertical-align:center"
+                    android:layout_rowSpan="2"
+                    android:layout_gravity="right">
+                    <ImageButton
+                        android:id="@+id/wishbtn"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:width="3dp"
+                        android:height="3dp"
+                        android:paddingLeft="0dp"
+
+                        android:background="@drawable/cart_plus"
+                       />
+
+                    <ImageButton
+                        android:id="@+id/removeWishbtn"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:width="3dp"
+                        android:height="3dp"
+                        style="vertical-align:center"
+                        android:paddingLeft="0dp"
+
+
+                        android:background="@drawable/cart_remove"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/conditionTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#C2C2C5"
+                    android:textSize="15dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    />
+
+                <TextView
+                    android:id="@+id/priceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:paddingRight="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#614CE1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Subject Show Here"
+                    android:layout_column="1"
+                    />
+            </GridLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.v7.widget.CardView>
