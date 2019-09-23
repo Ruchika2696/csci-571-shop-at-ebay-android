@@ -10,6 +10,6 @@ development.
 ● Get familiar with third party libraries like Picasso, Glide and Volley.
 ```
 
-### 2) Assignment Description is [HERE](https://github.com/Ruchika2696/csci-571-shop-at-ebay-android/blob/master/HW9_Description_Android.pdf)
+
 
 
